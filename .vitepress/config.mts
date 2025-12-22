@@ -34,6 +34,12 @@ export default defineConfig({
             { text: '项目结构', link: '/frontend/structure' },
             { text: '开发规范', link: '/frontend/standards' }
           ]
+        },
+        {
+          text: '模块开发',
+          items: [
+            { text: '概述', link: '/frontend/modules/' }
+          ]
         }
       ],
       '/backend/': [
@@ -57,6 +63,12 @@ export default defineConfig({
                 { text: 'Git 提交规范', link: '/backend/standards/git' }
               ]
             }
+          ]
+        },
+        {
+          text: '模块开发',
+          items: [
+            { text: '概述', link: '/backend/modules/' }
           ]
         }
       ],
