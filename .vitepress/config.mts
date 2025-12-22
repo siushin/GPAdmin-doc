@@ -12,6 +12,8 @@ export default defineConfig({
   description: "基于 Ant Design Pro + Laravel 的开箱即用的企业级管理后台",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/pokemon.png',
+
     nav: [
       { text: '首页', link: '/' },
       { text: '前端开发', link: '/frontend/' },
@@ -89,6 +91,13 @@ export default defineConfig({
 
     footer: {
       message: `Copyright © ${getCopyrightYear()} <a href="https://gpadmin.siushin.com" target="_blank">GPAdmin</a>. All rights reserved.`
+    }
+  },
+
+  vite: {
+    server: {
+      host: true, // 允许外部访问
+      allowedHosts: true, // 允许所有域名
     }
   }
 })
