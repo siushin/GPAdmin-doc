@@ -19,9 +19,9 @@ export default defineConfig({
       { text: '前端开发', link: '/frontend/' },
       { text: '后端开发', link: '/backend/' },
       { text: '接口协作', link: '/api/' },
-      { text: '部署运维', link: '/deployment/' },
-      { text: '常见问题', link: '/faq/' },
-      { text: '意见反馈', link: '/feedback/' }
+      { text: '部署运维', link: '/deploy/' },
+      { text: 'FAQ', link: '/faq/' },
+      { text: 'Issues', link: '/feedback/' }
     ],
 
     sidebar: {
@@ -43,7 +43,20 @@ export default defineConfig({
             { text: '概述', link: '/backend/' },
             { text: '快速开始', link: '/backend/getting-started' },
             { text: '项目结构', link: '/backend/structure' },
-            { text: '开发规范', link: '/backend/standards' }
+            {
+              text: '开发规范',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/backend/standards/' },
+                { text: '命名规范', link: '/backend/standards/naming' },
+                { text: '控制器规范', link: '/backend/standards/controller' },
+                { text: '模型规范', link: '/backend/standards/model' },
+                { text: 'API 规范', link: '/backend/standards/api' },
+                { text: '枚举类注释规范', link: '/backend/standards/enum' },
+                { text: '数据库规范', link: '/backend/standards/database' },
+                { text: 'Git 提交规范', link: '/backend/standards/git' }
+              ]
+            }
           ]
         }
       ],
@@ -57,19 +70,19 @@ export default defineConfig({
           ]
         }
       ],
-      '/deployment/': [
+      '/deploy/': [
         {
           text: '部署运维',
           items: [
-            { text: '概述', link: '/deployment/' },
-            { text: '环境配置', link: '/deployment/environment' },
-            { text: '部署流程', link: '/deployment/process' }
+            { text: '概述', link: '/deploy/' },
+            { text: '环境配置', link: '/deploy/environment' },
+            { text: '部署流程', link: '/deploy/process' }
           ]
         }
       ],
       '/faq/': [
         {
-          text: '常见问题',
+          text: 'FAQ',
           items: [
             { text: '常见问题', link: '/faq/' }
           ]
@@ -77,7 +90,7 @@ export default defineConfig({
       ],
       '/feedback/': [
         {
-          text: '意见反馈',
+          text: 'Issues',
           items: [
             { text: '意见反馈', link: '/feedback/' }
           ]

@@ -52,5 +52,4 @@ php artisan serve
 
 - [快速开始](./getting-started.md)
 - [项目结构](./structure.md)
-- [开发规范](./standards.md)
-
+- [开发规范](./standards/)

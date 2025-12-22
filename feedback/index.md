@@ -18,7 +18,7 @@
 2. **复现步骤**: 如果是 Bug，请提供复现步骤
 3. **预期行为**: 描述您期望的行为
 4. **实际行为**: 描述实际发生的行为
-5. **环境信息**: 
+5. **环境信息**:
    - 操作系统
    - PHP 版本（后端问题）
    - Node.js 版本（前端问题）
@@ -62,8 +62,7 @@
 
 ## 联系方式
 
-- **GitHub**: https://github.com/siushin/GPAdmin
-- **项目地址**: https://github.com/siushin/GPAdmin
+- **GitHub**: <https://github.com/siushin/GPAdmin>
+- **项目地址**: <https://github.com/siushin/GPAdmin>
 
 感谢您的支持！
-

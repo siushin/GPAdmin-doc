@@ -61,5 +61,5 @@ php artisan serve
 ## 下一步
 
 - 了解 [项目结构](./structure.md)
-- 阅读 [开发规范](./standards.md)
+- 阅读 [开发规范](./standards/)
 
