@@ -40,4 +40,6 @@ yarn build
 - [快速开始](./getting-started.md)
 - [项目结构](./structure.md)
 - [开发规范](./standards.md)
+- [模块开发](./modules/)
+- [公共组件](./components/)
 

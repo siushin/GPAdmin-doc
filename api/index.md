@@ -1,4 +1,4 @@
-# 接口协作
+# API
 
 GPAdmin 提供了完整的 RESTful API 接口，支持前后端分离开发。
 
@@ -39,4 +39,3 @@ GPAdmin 提供了完整的 RESTful API 接口，支持前后端分离开发。
 
 - [API 文档](./documentation.md)
 - [接口规范](./standards.md)
-

@@ -18,7 +18,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '前端开发', link: '/frontend/' },
       { text: '后端开发', link: '/backend/' },
-      { text: '接口协作', link: '/api/' },
+      { text: 'API', link: '/api/' },
       { text: '部署运维', link: '/deploy/' },
       { text: 'FAQ', link: '/faq/' },
       { text: 'Issues', link: '/feedback/' }
@@ -40,6 +40,13 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/frontend/modules/' }
           ]
+        },
+        {
+          text: '公共组件',
+          items: [
+            { text: '概述', link: '/frontend/components/' },
+            { text: '动态获取图标', link: '/frontend/components/动态获取图标' }
+          ]
         }
       ],
       '/backend/': [
@@ -58,7 +65,14 @@ export default defineConfig({
                 { text: '控制器规范', link: '/backend/standards/controller' },
                 { text: '模型规范', link: '/backend/standards/model' },
                 { text: 'API 规范', link: '/backend/standards/api' },
-                { text: '枚举类注释规范', link: '/backend/standards/enum' },
+                {
+                  text: '枚举注释规范',
+                  collapsed: false,
+                  items: [
+                    { text: '枚举类注释规范', link: '/backend/standards/enum' },
+                    { text: '枚举类注解注释规范', link: '/backend/standards/enum-annotation' }
+                  ]
+                },
                 { text: '数据库规范', link: '/backend/standards/database' },
                 { text: 'Git 提交规范', link: '/backend/standards/git' }
               ]
@@ -74,11 +88,28 @@ export default defineConfig({
       ],
       '/api/': [
         {
-          text: '接口协作',
+          text: 'API',
           items: [
             { text: '概述', link: '/api/' },
             { text: 'API 文档', link: '/api/documentation' },
             { text: '接口规范', link: '/api/standards' }
+          ]
+        },
+        {
+          text: '公共API',
+          collapsed: false,
+          items: [
+            { text: '生成树数据', link: '/api/common-api/tree-data' },
+            { text: '生成树数据（带缩进字符）', link: '/api/common-api/tree-data-indent' },
+            { text: '组织架构', link: '/api/common-api/organization' }
+          ]
+        },
+        {
+          text: '公共函数',
+          collapsed: false,
+          items: [
+            { text: 'LaravelTool', link: '/api/common-api/laravel-tool' },
+            { text: 'PHP Util', link: '/api/common-api/php-util' }
           ]
         }
       ],

@@ -123,3 +123,6 @@ $result = enumToArrayFromComment(OrganizationTypeEnum::Default);
 - `ResourceTypeEnum` - 资源类型（枚举值本身就是中文）
 - `DictionaryCategoryEnum` - 字典类别（枚举值本身就是中文）
 
+## 相关文档
+
+- [枚举类注解注释规范](./enum-annotation.md) - 使用 PHP 8 Attribute 注解为枚举添加描述信息
