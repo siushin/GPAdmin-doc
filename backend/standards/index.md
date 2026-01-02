@@ -9,5 +9,3 @@
 - [模型规范](./model.md) - 模型开发规范
 - [API 规范](./api.md) - API 接口规范
 - [数据库规范](./database.md) - 数据库设计规范
-- [Git 提交规范](./git.md) - Git 提交信息规范
-

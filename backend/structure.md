@@ -26,17 +26,21 @@ laravel-api/
 ## 目录说明
 
 ### app/Http/Controllers/
+
 存放控制器文件，处理 HTTP 请求。
 
 ### app/Models/
+
 存放 Eloquent 模型，定义数据表结构和关系。
 
 ### app/Services/
+
 存放业务逻辑服务类，将复杂业务逻辑从控制器中分离。
 
 ### database/migrations/
+
 存放数据库迁移文件，用于版本控制数据库结构。
 
 ### routes/api.php
-定义 API 路由。
 
+定义 API 路由。

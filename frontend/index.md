@@ -1,4 +1,4 @@
-# 前端开发
+# 快速开始
 
 GPAdmin 前端基于 Ant Design Pro 构建，提供了完整的企业级管理后台解决方案。
 
@@ -9,9 +9,21 @@ GPAdmin 前端基于 Ant Design Pro 构建，提供了完整的企业级管理�
 - **状态管理**: UmiJS
 - **构建工具**: UmiJS
 
-## 快速开始
+## 环境要求
 
-### 安装依赖
+- Node.js >= 14.x
+- npm >= 6.x 或 yarn >= 1.x
+
+## 安装步骤
+
+1. 克隆项目
+
+```bash
+git clone https://github.com/siushin/GPAdmin.git
+cd GPAdmin/GPAdmin
+```
+
+1. 安装依赖
 
 ```bash
 npm install
@@ -19,7 +31,7 @@ npm install
 yarn install
 ```
 
-### 启动开发服务器
+1. 启动开发服务器
 
 ```bash
 npm start
@@ -27,7 +39,11 @@ npm start
 yarn start
 ```
 
-### 构建生产版本
+1. 访问应用
+
+打开浏览器访问 `http://localhost:8000`
+
+## 构建生产版本
 
 ```bash
 npm run build
@@ -35,11 +51,9 @@ npm run build
 yarn build
 ```
 
-## 相关文档
+## 下一步
 
-- [快速开始](./getting-started.md)
-- [项目结构](./structure.md)
-- [开发规范](./standards.md)
-- [模块开发](./modules/)
-- [公共组件](./components/)
-
+- 了解 [项目结构](./structure.md)
+- 阅读 [开发规范](./standards.md)
+- 查看 [模块开发](./modules/)
+- 查看 [公共组件](./components/)

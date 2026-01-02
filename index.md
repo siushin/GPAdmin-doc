@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /frontend/getting-started
+      link: /frontend/
     - theme: alt
       text: 查看 GitHub
       link: https://github.com/siushin/GPAdmin

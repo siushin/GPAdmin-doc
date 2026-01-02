@@ -2,7 +2,7 @@
 
 GPAdmin 提供了 `IconDisplay` 组件和 `getIconComponent` 辅助函数，用于根据图标名称动态获取并显示 Ant Design 图标组件。
 
-## 概述
+## 快速开始
 
 在管理后台中，图标的名称通常存储在数据库中，需要根据字符串名称动态渲染对应的图标组件。`IconDisplay` 组件和 `getIconComponent` 函数提供了这种动态获取图标的能力。
 

@@ -29,8 +29,7 @@ export default defineConfig({
         {
           text: '前端开发',
           items: [
-            { text: '概述', link: '/frontend/' },
-            { text: '快速开始', link: '/frontend/getting-started' },
+            { text: '快速开始', link: '/frontend/' },
             { text: '项目结构', link: '/frontend/structure' },
             { text: '开发规范', link: '/frontend/standards' }
           ]
@@ -38,14 +37,14 @@ export default defineConfig({
         {
           text: '模块开发',
           items: [
-            { text: '概述', link: '/frontend/modules/' }
+            { text: '快速开始', link: '/frontend/modules/' }
           ]
         },
         {
           text: '公共组件',
           items: [
-            { text: '概述', link: '/frontend/components/' },
-            { text: '动态获取图标', link: '/frontend/components/动态获取图标' }
+            { text: '快速开始', link: '/frontend/components/' },
+            { text: '动态获取图标', link: '/frontend/components/icon' }
           ]
         }
       ],
@@ -53,14 +52,13 @@ export default defineConfig({
         {
           text: '后端开发',
           items: [
-            { text: '概述', link: '/backend/' },
-            { text: '快速开始', link: '/backend/getting-started' },
+            { text: '快速开始', link: '/backend/' },
             { text: '项目结构', link: '/backend/structure' },
             {
               text: '开发规范',
               collapsed: false,
               items: [
-                { text: '概述', link: '/backend/standards/' },
+                { text: '快速开始', link: '/backend/standards/' },
                 { text: '命名规范', link: '/backend/standards/naming' },
                 { text: '控制器规范', link: '/backend/standards/controller' },
                 { text: '模型规范', link: '/backend/standards/model' },
@@ -73,8 +71,7 @@ export default defineConfig({
                     { text: '枚举类注解注释规范', link: '/backend/standards/enum-annotation' }
                   ]
                 },
-                { text: '数据库规范', link: '/backend/standards/database' },
-                { text: 'Git 提交规范', link: '/backend/standards/git' }
+                { text: '数据库规范', link: '/backend/standards/database' }
               ]
             }
           ]
@@ -82,7 +79,7 @@ export default defineConfig({
         {
           text: '模块开发',
           items: [
-            { text: '概述', link: '/backend/modules/' }
+            { text: '快速开始', link: '/backend/modules/' }
           ]
         }
       ],
@@ -90,26 +87,65 @@ export default defineConfig({
         {
           text: 'API',
           items: [
-            { text: '概述', link: '/api/' },
+            { text: '快速开始', link: '/api/' },
             { text: 'API 文档', link: '/api/documentation' },
             { text: '接口规范', link: '/api/standards' }
           ]
         },
         {
-          text: '公共API',
+          text: '公共依赖包',
           collapsed: false,
           items: [
-            { text: '生成树数据', link: '/api/common-api/tree-data' },
-            { text: '生成树数据（带缩进字符）', link: '/api/common-api/tree-data-indent' },
-            { text: '组织架构', link: '/api/common-api/organization' }
+            {
+              text: 'laravel-tool',
+              collapsed: false,
+              items: [
+                { text: '快速开始', link: '/api/dependencies/laravel-tool/' },
+                { text: '属性类', link: '/api/dependencies/laravel-tool/attributes' },
+                { text: '模型转换', link: '/api/dependencies/laravel-tool/cases' },
+                { text: '枚举类', link: '/api/dependencies/laravel-tool/enums' },
+                { text: '助手函数', link: '/api/dependencies/laravel-tool/funcs' },
+                { text: '特征类', link: '/api/dependencies/laravel-tool/traits' },
+                { text: '工具类', link: '/api/dependencies/laravel-tool/utils' }
+              ]
+            },
+            {
+              text: 'php-util',
+              collapsed: false,
+              items: [
+                { text: '快速开始', link: '/api/dependencies/php-util/' },
+                { text: '助手函数', link: '/api/dependencies/php-util/funcs' },
+                { text: '特征类', link: '/api/dependencies/php-util/traits' },
+                { text: '工具类', link: '/api/dependencies/php-util/utils' }
+              ]
+            }
           ]
         },
         {
-          text: '公共函数',
+          text: '官方模块',
           collapsed: false,
           items: [
-            { text: 'LaravelTool', link: '/api/common-api/laravel-tool' },
-            { text: 'PHP Util', link: '/api/common-api/php-util' }
+            {
+              text: 'Base: 基础服务',
+              collapsed: false,
+              items: [
+                { text: '快速开始', link: '/api/modules/base/' },
+                {
+                  text: 'API',
+                  collapsed: false,
+                  items: [
+                    { text: '组织架构', link: '/api/modules/base/api/organization' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'SMS: 短信服务',
+              collapsed: false,
+              items: [
+                { text: '快速开始', link: '/api/modules/sms/' }
+              ]
+            }
           ]
         }
       ],
@@ -117,9 +153,10 @@ export default defineConfig({
         {
           text: '部署运维',
           items: [
-            { text: '概述', link: '/deploy/' },
+            { text: '快速开始', link: '/deploy/' },
             { text: '环境配置', link: '/deploy/environment' },
-            { text: '部署流程', link: '/deploy/process' }
+            { text: '部署流程', link: '/deploy/process' },
+            { text: 'Git 提交规范', link: '/deploy/git' }
           ]
         }
       ],

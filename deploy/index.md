@@ -27,4 +27,4 @@ GPAdmin 采用前后端分离架构：
 
 - [环境配置](./environment.md)
 - [部署流程](./process.md)
-
+- [Git 提交规范](./git.md)
