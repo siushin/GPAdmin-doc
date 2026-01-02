@@ -143,7 +143,14 @@ export default defineConfig({
               text: 'SMS: 短信服务',
               collapsed: false,
               items: [
-                { text: '快速开始', link: '/api/modules/sms/' }
+                { text: '快速开始', link: '/api/modules/sms/' },
+                {
+                  text: 'API',
+                  collapsed: false,
+                  items: [
+                    { text: '发送短信', link: '/api/modules/sms/api/sms' }
+                  ]
+                }
               ]
             }
           ]
