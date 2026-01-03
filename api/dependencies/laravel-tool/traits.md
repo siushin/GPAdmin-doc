@@ -214,6 +214,7 @@ $array = self::collectRecursiveToArray($collection);
 Excel 处理特征，提供了 Excel 文件的读取和写入功能。
 
 **类位置**：
+
 - `Siushin\LaravelTool\Traits\ExcelReader`
 - `Siushin\LaravelTool\Traits\ExcelWriter`
 
@@ -233,7 +234,7 @@ class ImportController extends Controller
         $fullPath = storage_path('app/' . $filePath);
 
         // 定义列映射
-        $columnMap = ['name', 'email', 'phone'];
+        $columnMap = ['name', 'email', 'mobile'];
 
         // 读取 Excel 数据
         $data = self::getExcelRowData(
@@ -281,4 +282,3 @@ class ExportController extends Controller
     }
 }
 ```
-

@@ -85,11 +85,11 @@ if (in_array($source, $validSources)) {
 use Siushin\LaravelTool\Enums\SocialTypeEnum;
 
 // 在查询中使用
-$account = Account::where('social_type', SocialTypeEnum::Phone->value)->first();
+$account = Account::where('social_type', SocialTypeEnum::Mobile->value)->first();
 
 // 在创建记录时使用
 Account::create([
-    'social_type' => SocialTypeEnum::Phone->value,
+    'social_type' => SocialTypeEnum::Mobile->value,
     // ... 其他字段
 ]);
 ```
@@ -111,4 +111,3 @@ if ($uploadedFile->getMimeType() === $fileType) {
     // 处理图片上传
 }
 ```
-
