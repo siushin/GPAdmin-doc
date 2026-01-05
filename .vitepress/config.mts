@@ -218,7 +218,7 @@ export default defineConfig({
   vite: {
     server: {
       host: true, // 允许外部访问
-      allowedHosts: true, // 允许所有域名
+      allowedHosts: ['doc.gpadmin.siushin.com', 'localhost', '127.0.0.1'], // 允许所有域名访问
     }
   }
 })
