@@ -136,6 +136,15 @@ export default defineConfig({
                   items: [
                     { text: '组织架构', link: '/api/modules/base/api/organization' }
                   ]
+                },
+                {
+                  text: '命令行',
+                  collapsed: false,
+                  items: [
+                    { text: '创建 API', link: '/api/modules/base/command/api' },
+                    { text: '创建控制器', link: '/api/modules/base/command/controller' },
+                    { text: '创建模型', link: '/api/modules/base/command/model' }
+                  ]
                 }
               ]
             },
