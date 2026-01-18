@@ -62,6 +62,8 @@ export default defineConfig({
                 { text: '命名规范', link: '/backend/standards/naming' },
                 { text: '控制器规范', link: '/backend/standards/controller' },
                 { text: '模型规范', link: '/backend/standards/model' },
+                { text: '服务类规范', link: '/backend/standards/service' },
+                { text: '逻辑类规范', link: '/backend/standards/logic' },
                 { text: 'API 规范', link: '/backend/standards/api' },
                 {
                   text: '枚举注释规范',
