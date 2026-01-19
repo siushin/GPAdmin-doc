@@ -50,7 +50,7 @@ npm start
 ### 后端项目
 
 ```bash
-cd laravel-api
+cd GPAdmin-api
 composer install
 php artisan migrate:fresh --seed
 ```
@@ -60,7 +60,7 @@ php artisan migrate:fresh --seed
 ## 📝 相关链接
 
 - [前端项目 GitHub](https://github.com/siushin/GPAdmin)
-- [后端项目 GitHub](https://github.com/siushin/laravel-api)
+- [后端项目 GitHub](https://github.com/siushin/GPAdmin-api)
 - [API 接口文档](https://s.apifox.cn/9e462aa5-5078-455c-b631-75b9d9e2a303)
 
 ## 🧑🏻‍💻 关于作者

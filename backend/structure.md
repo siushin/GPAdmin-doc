@@ -1,7 +1,7 @@
 # 项目结构
 
 ```
-laravel-api/
+GPAdmin-api/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/    # 控制器

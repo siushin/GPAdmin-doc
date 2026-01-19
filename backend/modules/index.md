@@ -20,17 +20,9 @@ php artisan module:make ModuleName
 2. 按照标准目录结构创建必要的文件和目录
 3. 注册模块到系统中
 
-## 模块配置
-
-每个模块都需要在 `module.json` 中配置基本信息：
-
-- 模块名称
-- 模块描述
-- 模块版本
-- 依赖关系
-
 ## 相关文档
 
+- [安装模块](./install.md)
+- [模块配置](./config.md)
 - [模块结构](./structure.md)
 - [模块规范](./standards.md)
-

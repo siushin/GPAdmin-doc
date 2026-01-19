@@ -24,7 +24,7 @@ GPAdmin 后端基于 Laravel 框架构建，提供了完整的 RESTful API 服�
 
 ```bash
 git clone https://github.com/siushin/GPAdmin.git
-cd GPAdmin/laravel-api
+cd GPAdmin/GPAdmin-api
 ```
 
 1. 安装依赖

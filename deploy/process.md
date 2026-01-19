@@ -10,7 +10,7 @@
 
 ```bash
 git clone https://github.com/siushin/GPAdmin.git
-cd GPAdmin/laravel-api
+cd GPAdmin/GPAdmin-api
 ```
 
 ### 3. 安装依赖
@@ -91,4 +91,3 @@ php artisan route:cache
 ```bash
 tail -f storage/logs/laravel.log
 ```
-

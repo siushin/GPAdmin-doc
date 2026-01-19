@@ -80,8 +80,11 @@ export default defineConfig({
         },
         {
           text: '模块开发',
+          collapsed: false,
           items: [
-            { text: '快速开始', link: '/backend/modules/' }
+            { text: '快速开始', link: '/backend/modules/' },
+            { text: '安装模块', link: '/backend/modules/install' },
+            { text: '模块配置', link: '/backend/modules/config' }
           ]
         }
       ],
@@ -174,7 +177,8 @@ export default defineConfig({
             { text: '快速开始', link: '/deploy/' },
             { text: '环境配置', link: '/deploy/environment' },
             { text: '部署流程', link: '/deploy/process' },
-            { text: 'Git 提交规范', link: '/deploy/git' }
+            { text: 'Git 提交规范', link: '/deploy/git' },
+            { text: 'Git 发布脚本', link: '/deploy/scripts' }
           ]
         }
       ],
