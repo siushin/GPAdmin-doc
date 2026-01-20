@@ -7,6 +7,7 @@
 A: 可以修改端口或关闭占用端口的进程。
 
 修改端口：
+
 ```bash
 PORT=3000 npm start
 ```
@@ -14,6 +15,7 @@ PORT=3000 npm start
 ### Q: 构建时内存不足？
 
 A: 增加 Node.js 内存限制：
+
 ```bash
 NODE_OPTIONS=--max_old_space_size=4096 npm run build
 ```
@@ -24,6 +26,33 @@ A: 在 `config/config.ts` 中配置 `proxy` 选项。
 
 ## 后端相关问题
 
+### Q: 报错：XXXServiceProvider not found
+
+> 一般出现在拉取子模块后，没有更新composer依赖文件映射。
+
+```shell
+ Error 
+
+  Class "Modules\XXX\Providers\XXXServiceProvider" not found
+
+  at vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:205
+    201▕      * @return \Illuminate\Support\ServiceProvider
+    202▕      */
+    203▕     public function createProvider($provider)
+    204▕     {
+  ➜ 205▕         return new $provider($this->app);
+    206▕     }
+    207▕ }
+    208▕ 
+
+      +12 vendor frames 
+
+  13  artisan:16
+      Illuminate\Foundation\Application::handleCommand()
+```
+
+A: composer依赖文件未更新映射，执行一下：`composer dump-autoload` 即可
+
 ### Q: 数据库迁移失败？
 
 A: 检查数据库连接配置，确保数据库用户有足够权限。
@@ -31,6 +60,7 @@ A: 检查数据库连接配置，确保数据库用户有足够权限。
 ### Q: 如何清除缓存？
 
 A: 运行以下命令：
+
 ```bash
 php artisan cache:clear
 php artisan config:clear
@@ -56,7 +86,6 @@ A: 在 Nginx 配置中添加 SSL 证书配置，并更新 `.env` 中的 `APP_URL
 
 如果遇到其他问题，请：
 
-1. 查看项目 GitHub Issues: https://github.com/siushin/GPAdmin/issues
+1. 查看项目 GitHub Issues: <https://github.com/siushin/GPAdmin/issues>
 2. 提交新的 Issue 描述问题
 3. 查看项目文档和代码注释
-
