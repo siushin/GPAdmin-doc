@@ -83,8 +83,10 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '快速开始', link: '/backend/modules/' },
+            { text: '子模块管理', link: '/backend/modules/submodule' },
             { text: '安装模块', link: '/backend/modules/install' },
-            { text: '模块配置', link: '/backend/modules/config' }
+            { text: '模块配置', link: '/backend/modules/config' },
+            { text: '模块自动同步', link: '/backend/modules/sync' }
           ]
         }
       ],

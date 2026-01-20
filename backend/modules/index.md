@@ -22,7 +22,9 @@ php artisan module:make ModuleName
 
 ## 相关文档
 
+- [子模块管理](./submodule.md)
 - [安装模块](./install.md)
 - [模块配置](./config.md)
+- [模块自动同步](./sync.md)
 - [模块结构](./structure.md)
 - [模块规范](./standards.md)
