@@ -21,7 +21,16 @@ export default defineConfig({
       { text: 'API', link: '/api/' },
       { text: '部署运维', link: '/deploy/' },
       { text: 'FAQ', link: '/faq/' },
-      { text: 'Issues', link: '/feedback/' }
+      { text: 'Issues', link: '/feedback/' },
+      {
+        text: '项目规划',
+        items: [
+          // { text: '短期规划', link: '/planning/short-term' },
+          { text: '中期规划', link: '/planning/mid-term' },
+          // { text: '远期规划', link: '/planning/long-term' }
+        ]
+      },
+      { text: '在线演示', link: 'https://gpadmin.siushin.com/' }
     ],
 
     sidebar: {
@@ -197,6 +206,16 @@ export default defineConfig({
           text: 'Issues',
           items: [
             { text: '意见反馈', link: '/feedback/' }
+          ]
+        }
+      ],
+      '/planning/': [
+        {
+          text: '项目规划',
+          items: [
+            { text: '短期规划', link: '/planning/short-term' },
+            { text: '中期规划', link: '/planning/mid-term' },
+            { text: '远期规划', link: '/planning/long-term' }
           ]
         }
       ]
